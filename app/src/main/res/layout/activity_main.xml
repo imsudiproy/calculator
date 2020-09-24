@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/photo"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight='0'
+        android:gravity="center"
+        android:text="Calculator"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        android:textColor="@android:color/black"
+        android:padding="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Result"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Number 1"
+        android:layout_below="@+id/Result"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Number 2"
+        android:layout_below="@+id/number1"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:text="+"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_below="@+id/number2"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="-"
+        android:layout_below="@+id/number2"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:text="%"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textView3"
+        android:layout_marginBottom="190dp"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:text="X"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/textView3"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:text="/"
+        android:layout_above="@+id/textView3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="100dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic|bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="For reporting problems contact- sudiproy1999@gmail.com" />
+
+
+
+</RelativeLayout>
